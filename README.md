@@ -12,6 +12,7 @@ Source: https://roadmap.sh/projects/tmdb-cli
 **top** = movies listed by top rated status  
 **upcoming** = lists upcoming movies to theatres  
 
+**Important**:
 User must provide their own API key  
 Hit the link below, then, hit the API link link to start  
 API key can be gotten here: https://developer.themoviedb.org/docs/getting-started

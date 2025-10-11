@@ -14,7 +14,7 @@ def main():
       json.dump(set_data, json_file, indent=2)
       last_url = "none"
   else:
-  #Get last used url for comparison
+    #Get last used url for comparison
     with open("url.json", "r") as json_file:
       url_data = json.load(json_file)
       last_url = url_data["last_url"]

@@ -89,7 +89,7 @@ def get_upcoming_data(key: str):
               sys.exit()
           json.dump(movie_data, json_file, indent=2)
 
-def play_data():
+def playing_data():
     with open("movie-db.json", "r") as json_file:
         json_data = json.load(json_file)
         results = json_data.get("results", [])

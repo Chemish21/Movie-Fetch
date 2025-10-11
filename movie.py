@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 from args import args
 import tasks
 import json
@@ -7,10 +8,15 @@ def main():
   #API key
   the_key = input("Enter your key: ")
   
-  #Get last used url for comparison
-  with open("url.json", "r") as json_file:
-    url_data = json.load(json_file)
-    last_url = url_data["last_url"]
+  if not os.path.exists("url.json"):
+    with open("url.json", "w") as json_file:
+      set_data = {"last_url": "none"}
+      json.dump(set_data, json_file, indent=2)
+  else:
+    #Get last used url for comparison
+    with open("url.json", "r") as json_file:
+      url_data = json.load(json_file)
+      last_url = url_data["last_url"]
 
   #url's for comparison
   play_url = f"https://api.themoviedb.org/3/movie/now_playing?api_key={the_key}&language=en-US&page=1"

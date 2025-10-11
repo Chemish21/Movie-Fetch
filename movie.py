@@ -21,10 +21,10 @@ def main():
   #If last url matches url run task, else, get/update data and run task
   if args.type == "playing":
     if last_url == play_url:
-      tasks.play_data()
+      tasks.playing_data()
     else:
       tasks.get_playing_data(the_key)
-      tasks.play_data()
+      tasks.playing_data()
   elif args.type == "popular":
     if last_url == pop_url:
       tasks.popular_data()

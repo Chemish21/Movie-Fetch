@@ -13,4 +13,5 @@ Source: https://roadmap.sh/projects/tmdb-cli
 **upcoming** = lists upcoming movies to theatres  
 
 User must provide their own API key  
-API key can be gotten here: https://www.themoviedb.org/settings/api
+Hit the link below, then, hit the API link link to start
+API key can be gotten here: https://developer.themoviedb.org/docs/getting-started

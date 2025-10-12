@@ -1,5 +1,5 @@
 # Movie-Fetch
-A Command Line Interface program that displays movie information from the IMDB API  
+A Command Line Interface program that displays movie information from TMDB API  
 Idea taken from roadmap.sh suggested projects  
 Source: https://roadmap.sh/projects/tmdb-cli  
 

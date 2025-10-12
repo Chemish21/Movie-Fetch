@@ -7,10 +7,10 @@ Source: https://roadmap.sh/projects/tmdb-cli
 **Example**: --type "popular"  
 
 **Options**:  
-**playing** = playing now movies  
-**popular** = movies listed by popularity  
-**top** = movies listed by top rated status  
-**upcoming** = lists upcoming movies to theatres  
+**playing** = Displays now playing movies  
+**popular** = Displays movies listed by popularity  
+**top** = Displays top rated movies  
+**upcoming** = Displays upcoming movies to theaters    
 
 **Important**:  
 User must provide their own API key  

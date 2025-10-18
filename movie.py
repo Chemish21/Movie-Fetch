@@ -7,6 +7,7 @@ import json
 
 def main():
 
+  #Get users API key
   the_key = API_KEY
   
   if not os.path.exists("url.json"):

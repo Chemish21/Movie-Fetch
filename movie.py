@@ -53,7 +53,7 @@ def main():
       tasks.get_upcoming_data(the_key)
       tasks.upcoming_data()
   else:
-    print("Invalid Comamnd. Options: playing, popular, top, or upcoming")
+    print("Invalid Comamnd. Use --type and then Options: playing, popular, top, or upcoming")
 
 if __name__ == '__main__':
   main()

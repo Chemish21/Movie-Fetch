@@ -2,11 +2,12 @@
 import os
 from args import args
 import tasks
+from tasks import API_KEY
 import json
 
 def main():
-  #API key
-  the_key = input("Enter your key: ")
+
+  the_key = API_KEY
   
   if not os.path.exists("url.json"):
     with open("url.json", "w") as json_file:
@@ -30,25 +31,25 @@ def main():
     if last_url == play_url:
       tasks.playing_data()
     else:
-      tasks.get_playing_data(the_key)
+      tasks.get_playing_data()
       tasks.playing_data()
   elif args.type == "popular":
     if last_url == pop_url:
       tasks.popular_data()
     else:
-      tasks.get_popular_data(the_key)
+      tasks.get_popular_data()
       tasks.popular_data()
   elif args.type == "top":
     if last_url == top_url:
       tasks.top_data()
     else:
-      tasks.get_top_data(the_key)
+      tasks.get_top_data()
       tasks.top_data()
   elif args.type == "upcoming":
     if last_url == upcoming_url:
       tasks.upcoming_data()
     else:
-      tasks.get_upcoming_data(the_key)
+      tasks.get_upcoming_data()
       tasks.upcoming_data()
   else:
     print("Invalid Comamnd. Options: playing, popular, top, or upcoming")

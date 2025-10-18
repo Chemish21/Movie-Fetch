@@ -1,7 +1,13 @@
 #Python
+from dotenv import load_dotenv
+import os
 import sys
 import requests
 import json
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 
 def get_playing_data(key: str):
   API_KEY = key

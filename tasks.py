@@ -9,8 +9,7 @@ load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
 
-def get_playing_data(key: str):
-  API_KEY = key
+def get_playing_data():
 
   url = f"https://api.themoviedb.org/3/movie/now_playing?api_key={API_KEY}&language=en-US&page=1"
   the_url = url
@@ -31,8 +30,7 @@ def get_playing_data(key: str):
           json.dump(movie_data, json_file, indent=2)
   
 
-def get_popular_data(key: str):
-  API_KEY = key
+def get_popular_data():
 
   url = f"https://api.themoviedb.org/3/movie/popular?api_key={API_KEY}&language=en-US&page=1"
   the_url = url
@@ -53,8 +51,7 @@ def get_popular_data(key: str):
           json.dump(movie_data, json_file, indent=2)
   
 
-def get_top_data(key: str):
-  API_KEY = key
+def get_top_data():
 
   url = f"https://api.themoviedb.org/3/movie/top_rated?api_key={API_KEY}&language=en-US&page=1"
   the_url = url
@@ -74,8 +71,7 @@ def get_top_data(key: str):
               sys.exit()
           json.dump(movie_data, json_file, indent=2)
   
-def get_upcoming_data(key: str):
-  API_KEY = key
+def get_upcoming_data():
 
   url = f"https://api.themoviedb.org/3/movie/upcoming?api_key={API_KEY}&language=en-US&page=1"
   the_url = url

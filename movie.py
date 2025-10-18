@@ -32,25 +32,25 @@ def main():
     if last_url == play_url:
       tasks.playing_data()
     else:
-      tasks.get_playing_data()
+      tasks.get_playing_data(the_key)
       tasks.playing_data()
   elif args.type == "popular":
     if last_url == pop_url:
       tasks.popular_data()
     else:
-      tasks.get_popular_data()
+      tasks.get_popular_data(the_key)
       tasks.popular_data()
   elif args.type == "top":
     if last_url == top_url:
       tasks.top_data()
     else:
-      tasks.get_top_data()
+      tasks.get_top_data(the_key)
       tasks.top_data()
   elif args.type == "upcoming":
     if last_url == upcoming_url:
       tasks.upcoming_data()
     else:
-      tasks.get_upcoming_data()
+      tasks.get_upcoming_data(the_key)
       tasks.upcoming_data()
   else:
     print("Invalid Comamnd. Options: playing, popular, top, or upcoming")

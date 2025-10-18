@@ -35,6 +35,7 @@ def get_playing_data(key):
 
 def get_popular_data(key):
 
+  #Getting API key
   API_KEY = key
 
   url = f"https://api.themoviedb.org/3/movie/popular?api_key={API_KEY}&language=en-US&page=1"
@@ -58,6 +59,7 @@ def get_popular_data(key):
 
 def get_top_data(key):
 
+  #Getting API key
   API_KEY = key
 
   url = f"https://api.themoviedb.org/3/movie/top_rated?api_key={API_KEY}&language=en-US&page=1"
@@ -80,6 +82,7 @@ def get_top_data(key):
   
 def get_upcoming_data(key):
 
+  #Getting API key
   API_KEY = key
 
   url = f"https://api.themoviedb.org/3/movie/upcoming?api_key={API_KEY}&language=en-US&page=1"

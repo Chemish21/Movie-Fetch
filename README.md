@@ -3,7 +3,7 @@ A Command Line Interface program that displays movie information from TMDB API
 Idea taken from roadmap.sh suggested projects  
 Source: https://roadmap.sh/projects/tmdb-cli  
 
-**Usage**: Enter --type followed by preferred category  
+**Usage**: python3 movie.py --type [option]  
 **Example**: --type "popular"  
 
 **Options**:  
